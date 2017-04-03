@@ -5,24 +5,39 @@ import {
     Route,
     Link
 } from 'react-router-dom';
+import { Navbar, Nav, NavItem } from 'react-bootstrap';
 
 
 
 class App extends Component {
-  render() {
 
+
+  render() {
     return (
-        <Router>
+<Router>
       <div className="App">
-          <nav>
-              Gif Background Playlist Creator{'\u00A0'}
-              <Link to="/"> Home </Link> {'\u00A0'} | {'\u00A0'}
-              <Link to="/login"> Login </Link> {'\u00A0'} | {'\u00A0'}
-              <Link to="/player"> Player </Link>
-          </nav>
+          {/* Below Is JSX Bootstrap Navbar formatted with pills */}
+          <Navbar>
+              <Navbar.Header>
+                  <Navbar.Brand>
+                      <Link to="/home" >Gif Gallery Player</Link>
+                  </Navbar.Brand>
+              </Navbar.Header>
+          <Nav bsStyle="pills"  >
+              <NavItem eventKey={1}><Link to="/home"> Home </Link></NavItem>
+              <NavItem eventKey={2}><Link to="/gallery"> Gallery</Link></NavItem>
+          </Nav>
+          <Nav pullRight>
+              <NavItem><Link to="/login"> Login </Link></NavItem>
+              {/* add :userid below */}
+              <NavItem><Link to="/user"> User </Link></NavItem>
+
+          </Nav>
+          </Navbar>
 
       </div>
-        </Router>
+</Router>
+
     );
   }
 }
