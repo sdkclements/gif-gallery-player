@@ -7,6 +7,7 @@ import {
 } from 'react-router-dom';
 import { Navbar, Nav, NavItem } from 'react-bootstrap';
 import LoginArea from './LoginArea.js'
+import DragnDropArea from './DragnDropArea.js'
 
 
 
@@ -35,7 +36,12 @@ class App extends Component {
 
           </Nav>
           </Navbar>
+          <div>
           <LoginArea />
+          </div>
+          <div>
+          <DragnDropArea />
+          </div>
 
       </div>
 </Router>
