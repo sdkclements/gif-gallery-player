@@ -1,0 +1,9 @@
+.LoginContainer {
+    margin: auto;
+    width: 50%;
+    border-style: solid;
+    border-color: white;
+    border-radius: 3px;
+    padding: 2px;
+
+}

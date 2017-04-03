@@ -6,6 +6,7 @@ import {
     Link
 } from 'react-router-dom';
 import { Navbar, Nav, NavItem } from 'react-bootstrap';
+import LoginArea from './LoginArea.js'
 
 
 
@@ -34,6 +35,7 @@ class App extends Component {
 
           </Nav>
           </Navbar>
+          <LoginArea />
 
       </div>
 </Router>
