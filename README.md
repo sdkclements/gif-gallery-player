@@ -35,7 +35,53 @@ $.ajax({
 });  
 
 
+{/*import * as firebase from 'firebase'
+
+let config = {
+    apiKey: " ",
+    authDomain: "",
+    databaseUrL: "",
+    storageBucket: ""
+}
+firebase.initializeApp */}
+
+
+
+#### firebase info
+<script src="https://www.gstatic.com/firebasejs/3.7.4/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyA5m7X21KTEs8VNxrSEL7sK8u_EXgnn1zs",
+    authDomain: "giffy-gallery.firebaseapp.com",
+    databaseURL: "https://giffy-gallery.firebaseio.com",
+    projectId: "giffy-gallery",
+    storageBucket: "giffy-gallery.appspot.com",
+    messagingSenderId: "513689650622"
+  };
+  firebase.initializeApp(config);
+</script>
+
+
+downloaded private key:
+
+var admin = require("firebase-admin");
+
+var serviceAccount = require("path/to/serviceAccountKey.json");
+
+admin.initializeApp({
+  credential: admin.credential.cert(serviceAccount),
+  databaseURL: "https://giffy-gallery.firebaseio.com"
+});
+
+
 ###Last thought:
+
+
+ <NavItem  eventKey={2}><Link to="/gallery"> Gallery</Link></NavItem>
+              <NavItem  eventKey={3}><Link to="/addFiles"> addFiles </Link></NavItem>
+              <NavItem  eventKey={4}><Link to="/gifPlayer"> Gif Player </Link></NavItem>
+              <NavItem  eventKey={5}><Link to="/gifsearch"> Gif Search </Link></NavItem>
  GiffySearch need to totally re work these.(after reading some of the solution) Almost there with understanding components the components chain. Downwards treee
 
 Clean up the src folder add more folders and seperate components

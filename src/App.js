@@ -7,17 +7,14 @@ import {
 } from 'react-router-dom';
 
 import { Navbar, Nav, NavItem } from 'react-bootstrap';
-import LoginArea from './LoginArea.js'
-import DragnDropArea from './DragnDropArea.js'
-import gifPlayer from './gifPlayer.js'
-import GiffySearchCont from './GiffySearch.js'
 
-
+import LoginArea from './components/login/LoginArea.js'
+import DragnDropArea from './components/dragndrop/DragnDropArea.js'
+import gifPlayer from './components/player/gifPlayer.js'
 
 
 
 class App extends Component {
-
 
   render() {
     return (
@@ -31,29 +28,27 @@ class App extends Component {
                   </Navbar.Brand>
               </Navbar.Header>
           <Nav bsStyle="pills"  >
-              <NavItem eventKey={1}><Link to="/home"> Home </Link></NavItem>
-              <NavItem eventKey={2}><Link to="/gallery"> Gallery</Link></NavItem>
-              <NavItem eventKey={3}><Link to="/addFiles"> addFiles </Link></NavItem>
-              <NavItem eventKey={4}><Link to="/gifPlayer"> Gif Player </Link></NavItem>
-              <NavItem eventKey={5}><Link to="/gifsearch"> Gif Search </Link></NavItem>
+              <NavItem ><Link to="/home"> Home </Link> </NavItem>
+              <NavItem ><Link to="/gallery"> Gallery </Link></NavItem>
+              <NavItem ><Link to="/addfiles"> Add Files </Link></NavItem>
+              <NavItem ><Link to="/gifplayer"> Player </Link></NavItem>
+              <NavItem ><Link to="/gifsearch"> Search </Link></NavItem>
 
 
           </Nav>
           <Nav pullRight>
-              <NavItem><Link to="/login"> Login </Link></NavItem>
+              <NavItem ><Link to="/login"> Login </Link></NavItem>
               {/* add :userid below */}
-              <NavItem><Link to="/user"> User </Link></NavItem>
+              <NavItem ><Link to="/user"> User </Link></NavItem>
 
           </Nav>
           </Navbar>
           <div>
-          <Route exact path="/addFiles" component={DragnDropArea} />
-          <Route exact path="/login" component={LoginArea} />
-          <Route exact path="/gifPlayer" component={gifPlayer} />
-          <Route exact path="/gifsearch" component={GiffySearchCont} />
+          <Route  path="/addFiles" component={DragnDropArea } />
+          <Route  path="/login" component={LoginArea } />
+          <Route path="/gifPlayer" component={gifPlayer} />
+
           </div>
-
-
 
       </div>
 </Router>
