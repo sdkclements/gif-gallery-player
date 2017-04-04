@@ -5,9 +5,13 @@ import {
     Route,
     Link
 } from 'react-router-dom';
+
 import { Navbar, Nav, NavItem } from 'react-bootstrap';
 import LoginArea from './LoginArea.js'
 import DragnDropArea from './DragnDropArea.js'
+import gifPlayer from './gifPlayer.js'
+
+
 
 
 
@@ -28,6 +32,9 @@ class App extends Component {
           <Nav bsStyle="pills"  >
               <NavItem eventKey={1}><Link to="/home"> Home </Link></NavItem>
               <NavItem eventKey={2}><Link to="/gallery"> Gallery</Link></NavItem>
+              <NavItem eventKey={3}><Link to="/addFiles"> addFiles </Link></NavItem>
+              <NavItem eventKey={4}><Link to="/gifPlayer"> Gif Player </Link></NavItem>
+
           </Nav>
           <Nav pullRight>
               <NavItem><Link to="/login"> Login </Link></NavItem>
@@ -37,11 +44,12 @@ class App extends Component {
           </Nav>
           </Navbar>
           <div>
-          <LoginArea />
+          <Route path="/addFiles" component={DragnDropArea} />
+          <Route exact path="/login" component={LoginArea} />
+               <Route exact path="/gifPlayer" component={gifPlayer} />
           </div>
-          <div>
-          <DragnDropArea />
-          </div>
+
+
 
       </div>
 </Router>

@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import Dropzone from 'react-dropzone'
+import './DragnDropArea.css'
 
 class DragnDropArea extends Component {
 
@@ -11,9 +12,10 @@ class DragnDropArea extends Component {
 
     render(){
         return(
-            <div>
+            <div className="dzone">
+                <h1> Drag N Drop Area </h1>
                 <Dropzone onDrop={this.onDrop}>
-                    <div> Try droping some files here, or click to select files to upload</div>
+                    <div className="dropText"> Try droping some files here, or click to select files to upload</div>
                 </Dropzone>
             </div>
 
