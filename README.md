@@ -33,3 +33,9 @@ $.ajax({
     success: YOUR_SUCCESS_HANDLER,
     error: YOUR_ERROR_HANDLER
 });  
+
+
+###Last thought:
+ GiffySearch need to totally re work these.(after reading some of the solution) Almost there with understanding components the components chain. Downwards treee
+
+Clean up the src folder add more folders and seperate components
