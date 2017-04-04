@@ -10,6 +10,7 @@ import { Navbar, Nav, NavItem } from 'react-bootstrap';
 import LoginArea from './LoginArea.js'
 import DragnDropArea from './DragnDropArea.js'
 import gifPlayer from './gifPlayer.js'
+import GiffySearchCont from './GiffySearch.js'
 
 
 
@@ -34,6 +35,8 @@ class App extends Component {
               <NavItem eventKey={2}><Link to="/gallery"> Gallery</Link></NavItem>
               <NavItem eventKey={3}><Link to="/addFiles"> addFiles </Link></NavItem>
               <NavItem eventKey={4}><Link to="/gifPlayer"> Gif Player </Link></NavItem>
+              <NavItem eventKey={5}><Link to="/gifsearch"> Gif Search </Link></NavItem>
+
 
           </Nav>
           <Nav pullRight>
@@ -44,9 +47,10 @@ class App extends Component {
           </Nav>
           </Navbar>
           <div>
-          <Route path="/addFiles" component={DragnDropArea} />
+          <Route exact path="/addFiles" component={DragnDropArea} />
           <Route exact path="/login" component={LoginArea} />
-               <Route exact path="/gifPlayer" component={gifPlayer} />
+          <Route exact path="/gifPlayer" component={gifPlayer} />
+          <Route exact path="/gifsearch" component={GiffySearchCont} />
           </div>
 
 
