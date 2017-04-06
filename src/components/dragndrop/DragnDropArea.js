@@ -3,6 +3,13 @@ import Dropzone from 'react-dropzone'
 import './DragnDropArea.css'
 
 class DragnDropArea extends Component {
+    constructor(props){
+        super(props)
+        this.state = {
+            files: []
+        }
+
+}
 
     onDrop(acceptedFiles, rejectedFiles) {
         console.log('Accepted Files: ', acceptedFiles)
