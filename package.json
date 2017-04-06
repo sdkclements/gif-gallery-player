@@ -1,6 +1,5 @@
 {
   "name": "gif-gallery-player",
-  "homepage": "http://sdkclements.github.io/gif-gallery-player/home",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

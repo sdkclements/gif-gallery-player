@@ -85,3 +85,6 @@ admin.initializeApp({
  GiffySearch need to totally re work these.(after reading some of the solution) Almost there with understanding components the components chain. Downwards treee
 
 Clean up the src folder add more folders and seperate components
+
+
+readd this laster "homepage": "http://sdkclements.github.io/gif-gallery-player/home", in package
