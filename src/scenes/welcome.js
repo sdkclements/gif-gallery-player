@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import {
-    BrowserRouter as Router,
+
     Link
 } from 'react-router-dom'
 import {
@@ -13,7 +13,7 @@ import {
 export default class Welcomeview extends Component {
     render(){
         return(
-            <Router>
+
             <div>
                 <Jumbotron>
                     <h1>Welcome to the Gif Combinator! </h1>
@@ -22,7 +22,7 @@ export default class Welcomeview extends Component {
                 </Jumbotron>
 
             </div>
-            </Router>
+
         )
     }
 }

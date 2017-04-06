@@ -10,7 +10,6 @@ import { Navbar, Nav, NavItem } from 'react-bootstrap';
 import LoginArea from './components/login/LoginArea.js'
 import DragnDropArea from './components/dragndrop/DragnDropArea.js'
 import gifPlayer from './components/player/gifPlayer.js'
-
 import Welcomeview from "./scenes/welcome";
 
 
@@ -44,7 +43,7 @@ export default class NavBar extends Component {
                         </Nav>
                     </Navbar>
                     <div>
-                        <Route  exact path="/" component={Welcomeview } />
+                        <Route  path="/" component={Welcomeview } />
                         <Route  exact path="/addFiles" component={DragnDropArea } />
                         <Route  path="/login" component={LoginArea } />
                         <Route  path="/gifPlayer" component={gifPlayer} />
