@@ -1,9 +1,5 @@
 import React, { Component } from 'react';
-import {
-    BrowserRouter as Router,
-    Route,
-    Link
-} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import { Navbar, Nav, NavItem } from 'react-bootstrap';
 
@@ -14,7 +10,7 @@ export default class NavBar extends Component {
 
     render() {
         return (
-            <Router>
+
                 <div className="navbarcontainer">
                     {/* Below Is JSX Bootstrap Navbar formatted with pills */}
                     <Navbar>
@@ -45,7 +41,7 @@ export default class NavBar extends Component {
                     </div>
 
                 </div>
-            </Router>
+
 
         );
     }
