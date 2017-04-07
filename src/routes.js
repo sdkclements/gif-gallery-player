@@ -1,11 +1,12 @@
-import React, {Component} from 'react'
+import React from 'react'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 
 import App from './App'
 import LoginArea from './components/login/LoginArea.js'
 import DragnDropArea from './components/dragndrop/DragnDropArea.js'
-import gifPlayer from './components/player/gifPlayer.js'
+import Gifplayer from './components/player/gifPlayer.js'
 import Welcomeview from "./scenes/welcome";
+import Home from './components/search/GiffySearch'
 
 const Routes = (props) => (
             <Router {...props}>
@@ -14,8 +15,10 @@ const Routes = (props) => (
                 <Route exact path="/home" component={Welcomeview }/>
                 <Route exact path="/addFiles" component={DragnDropArea }/>
                 <Route path="/login" component={LoginArea }/>
-                <Route path="/gifPlayer" component={gifPlayer}/>
+                <Route path="/gifPlayer" component={Gifplayer} />
+                 <Route path="/search" component={Home} />
                 </div>
+
 
             </Router>
         )

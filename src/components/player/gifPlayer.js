@@ -1,25 +1,26 @@
 import React, { Component } from 'react';
 import './gifPlayer.css';
-import test from '../../images/lockitup.gif'
 import GifPlayer from 'react-gif-player'
 
 
 
+class Gifplayer extends Component {
+    constructor(props){
+        super(props)
+        this.state = { gfiles: this.props.files}
 
-
-class gifPlayer extends Component {
-
+}
 
     render() {
 
         return (
-            <div id="gifP">
-
-                <GifPlayer gif={test} />
-
+            <div>
+                <GifPlayer gif={this.state.gfiles} />
             </div>
+
+
         );
     }
 }
 
-export default gifPlayer;
+export default Gifplayer;
