@@ -2,8 +2,8 @@ import React, {Component} from 'react'
 import Dropzone from 'react-dropzone'
 import {  Grid, Row, Col } from 'react-bootstrap'
 import './DragnDropArea.css'
-import Gifplayer from "../player/gifPlayer";
-import giphy from '../../images/giphy.gif'
+import GifPlayer from 'react-gif-player'
+import lockit from '../../images/lockitup.gif'
 
 export default class DragnDropArea extends Component {
     constructor(props){
@@ -42,7 +42,7 @@ export default class DragnDropArea extends Component {
                     <p> ------------- </p>
                     <p> Gif player below </p>
                     <p>{this.state.name}</p>
-                    <Gifplayer gif={giphy} />
+                    <GifPlayer gif={lockit} />
                 </div>
                     </Col>
 

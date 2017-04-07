@@ -3,6 +3,7 @@ import './App.css';
 import NavBar from './NavBar.js'
 
 import classnames from 'classnames'
+
 import Welcomeview from "./scenes/welcome";
 
 

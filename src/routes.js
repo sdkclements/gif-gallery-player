@@ -14,7 +14,7 @@ const Routes = (props) => (
                 <div>
                 <Route path="/" component={App}/>
                 <Route exact path="/home" component={Welcomeview }/>
-                <Route exact path="/addFiles" component={DragnDropArea }/>
+                <Route exact path="/addfiles" component={DragnDropArea }/>
                 <Route path="/login" component={LoginArea }/>
                 <Route path="/gifPlayer" component={Gifplayer} />
                  <Route path="/search" component={Home} />
