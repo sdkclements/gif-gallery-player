@@ -7,6 +7,7 @@ import DragnDropArea from './components/dragndrop/DragnDropArea.js'
 import Gifplayer from './components/player/gifPlayer.js'
 import Welcomeview from "./scenes/welcome";
 import Home from './components/search/GiffySearch'
+import GifList from './SavedList'
 
 const Routes = (props) => (
             <Router {...props}>
@@ -17,6 +18,7 @@ const Routes = (props) => (
                 <Route path="/login" component={LoginArea }/>
                 <Route path="/gifPlayer" component={Gifplayer} />
                  <Route path="/search" component={Home} />
+                 <Route path="/list" component={GifList} />
                 </div>
 
 

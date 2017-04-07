@@ -3,9 +3,6 @@ import Dropzone from 'react-dropzone'
 import './DragnDropArea.css'
 import Gifplayer from "../player/gifPlayer";
 
-
-
-
 class DragnDropArea extends Component {
     constructor(props){
         super(props)
@@ -14,18 +11,14 @@ class DragnDropArea extends Component {
         }
 
 }
-
     onDrop(acceptedFiles) {
         this.setState({
             files: acceptedFiles
         })
         console.log('Accepted Files: ' + acceptedFiles)
 
-
 }
-
     render(){
-
 
         return(
             <div className="dzone">
