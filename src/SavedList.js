@@ -1,7 +1,8 @@
 import React, {Component} from 'react'
-import {ListGroup, ListGroupItem, Button} from 'react-bootstrap'
+import {ListGroup, ListGroupItem, Jumbotron, Grid, Row, Col, Button} from 'react-bootstrap'
 
 import * as firebase from 'firebase'
+import DragnDropArea from "./components/dragndrop/DragnDropArea";
 
 
 export default class GifList extends Component{
@@ -43,7 +44,11 @@ export default class GifList extends Component{
     render(){
 
         return(
-        <div className="container-fluid border box">
+        <div >
+            <Jumbotron>
+                <Grid>
+                    <Row className="show-grid">
+                        <Col sm={6} md={3}>
             <div className='padded'>
                 <h3>Add to your Gif List
                 </h3>
@@ -59,17 +64,26 @@ export default class GifList extends Component{
 
                 <div>
                     {this.state.gifList.map((gif, index)=>(
-                    <div key={index}>
-                        <p> {gif} </p>
-                    </div>
+                    <ListGroup key={index}>
+
+                        <ListGroupItem> {gif}</ListGroupItem>
+                    </ListGroup>
                     )
                 )}
                    </div>
 
             </div>
+                        </Col>
+                        <Col sm={6} md={8}>
+                        <DragnDropArea/>
+                        </Col>
+                    </Row>
+                </Grid>
+            </Jumbotron>
         </div>
 
         )
+
     }
 
 }

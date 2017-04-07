@@ -36,12 +36,5 @@ Dependencies:
 
 
 ###Last thought:
-  let allGif = this.gifList.map((gif, index) =>{
-        return(
-            <li key={index + 1} >
-                {gif.url}
-            </li>
-        )
-        }
-    )
+ 
 

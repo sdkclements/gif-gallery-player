@@ -1,9 +1,11 @@
 import React, {Component} from 'react'
 import Dropzone from 'react-dropzone'
+import {  Grid, Row, Col } from 'react-bootstrap'
 import './DragnDropArea.css'
 import Gifplayer from "../player/gifPlayer";
+import giphy from '../../images/giphy.gif'
 
-class DragnDropArea extends Component {
+export default class DragnDropArea extends Component {
     constructor(props){
         super(props)
         this.state = {
@@ -13,32 +15,46 @@ class DragnDropArea extends Component {
 }
     onDrop(acceptedFiles) {
         this.setState({
-            files: acceptedFiles
+            files: acceptedFiles,
+            name: acceptedFiles[0].name
         })
-        console.log('Accepted Files: ' + acceptedFiles)
+        console.log(acceptedFiles)
 
 }
     render(){
 
         return(
-            <div className="dzone">
-                <div>
-                <h1> Drag N Drop Area </h1>
+            <Grid>
+                <Row className="show-grid">
+                    <Col md={8}>
+                        <div className="dzone">
+
+                <h3> Drag N Drop Area </h3>
                 <Dropzone onDrop={this.onDrop}>
                     <div className="dropText"> Try dropping some files here, or click to select files to upload</div>
                 </Dropzone>
                 </div>
+
+                    </Col>
+                    <Col md={4}>
                 <div>
-                    <h1> Uploaded GIF</h1>
-                    <Gifplayer gfiles={this.state.files} />
+                    <h3> Uploaded GIF</h3>
+                    <p> ------------- </p>
+                    <p> Gif player below </p>
+                    <p>{this.state.name}</p>
+                    <Gifplayer gif={giphy} />
                 </div>
+                    </Col>
 
 
 
-            </div>
+
+                </Row>
+            </Grid>
+
 
         )
     }
 }
 
-export default DragnDropArea
+

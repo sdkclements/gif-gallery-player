@@ -11,7 +11,7 @@ export default class Welcomeview extends Component {
                 <Jumbotron>
                     <h1>Welcome to the Gif Gallery Creator! </h1>
                     <p>Upload, Search and make lists of Gifs .</p>
-                    <p><Button bsStyle="primary"><Link to="/search"> Add em up</Link></Button></p>
+                    <p><Button bsStyle="info"><Link to="/search"> Add em up</Link></Button></p>
                 </Jumbotron>
 
             </div>
