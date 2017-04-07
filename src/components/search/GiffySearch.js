@@ -9,8 +9,8 @@ import styles from '../../styles/index.js'
 
 const queryGiphy = (query) => {
     let term = query.replace(/\s/, "+"); // replace any white space characters with a "+"
-    let urla = "http://api.giphy.com/v1/gifs/search?q=" + term;
-    let apikey = "&api_key=dc6zaTOxFJmzC"
+    let urla = "https://api.giphy.com/v1/gifs/search?q=" + term;
+    let apikey = "&api_key=dc6zaTOxFJmzC&limit=10"
     let url = urla.concat(apikey)
     console.log(url)
 
