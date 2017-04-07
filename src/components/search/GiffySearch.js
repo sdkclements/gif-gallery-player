@@ -14,7 +14,7 @@ const queryGiphy = (query) => {
     let url = urla.concat(apikey)
     console.log(url)
 
-    // fetch all movies matching the passed in title as JSON
+    // fetch all Gifs that match search results are passed in data is top level tree im fetching from as JSON
     return $.getJSON(url).then((response) =>
         response["data"]
     );
@@ -114,6 +114,7 @@ class Results extends React.Component{
                         <div style={styles.gif} key={index+1}>
                             <GifPlayer gif={gif.images.fixed_height.url}/>
                             <p>{gif.slug}</p>
+                            <Button > Save for Use </Button>
                         </div>
                     )
                 )}

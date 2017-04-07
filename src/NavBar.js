@@ -3,9 +3,6 @@ import { Link } from 'react-router-dom';
 
 import { Navbar, Nav, NavItem } from 'react-bootstrap';
 
-
-
-
 export default class NavBar extends Component {
 
     render() {
@@ -26,20 +23,8 @@ export default class NavBar extends Component {
                             <NavItem ><Link to="/gifplayer"> Player </Link></NavItem>
                             <NavItem ><Link to="/search"> Search </Link></NavItem>
 
-
-                        </Nav>
-                        <Nav pullRight>
-                            <NavItem ><Link to="/login"> Login </Link></NavItem>
-                            {/* add :userid below */}
-                            <NavItem ><Link to="/user"> User </Link></NavItem>
-
                         </Nav>
                     </Navbar>
-                    <div>
-
-
-                    </div>
-
                 </div>
 
 
