@@ -16,9 +16,8 @@ export default class NavBar extends Component {
                                 <Link to="/home" >Gif Gallery Player</Link>
                             </Navbar.Brand>
                         </Navbar.Header>
-                        <Nav bsStyle="pills"  >
+                        <Nav bsStyle="pills" >
                             <NavItem ><Link to="/home"> Home </Link> </NavItem>
-                            <NavItem ><Link to="/addfiles"> Add Files </Link></NavItem>
                             <NavItem ><Link to="/search"> Search </Link></NavItem>
                             <NavItem ><Link to="/list"> Gif List </Link></NavItem>
                         </Nav>
