@@ -79,7 +79,10 @@ export default class GifList extends Component{
                         </Col>
                     </Row>
                 </Grid>
+                <p> Add Your stuff to GIPHY: ! | <a href="https://giphy.com/create/slideshow"> HERE</a></p>
             </Jumbotron>
+
+
         </div>
 
         )

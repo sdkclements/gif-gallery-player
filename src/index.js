@@ -33,6 +33,8 @@ export default firebase;
 
 //export an instance of the firebase db
 export const database = firebase.database();
+//export authentication service
+export const auth = firebase.auth();
 
 
 

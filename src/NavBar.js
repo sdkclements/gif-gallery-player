@@ -21,6 +21,7 @@ export default class NavBar extends Component {
                             <NavItem ><Link to="/search"> Search </Link></NavItem>
                             <NavItem ><Link to="/list"> Gif List </Link></NavItem>
                         </Nav>
+
                     </Navbar>
                 </div>
 
